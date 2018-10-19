@@ -1,3 +1,3 @@
-PATTERN-MATCHED in logs,ISSUE,SOLUTION
-Mechanism level: Checksum failed,REGISTRATION FAILURE DUE TO INCONSISTENT KERB TICKET CACHE,Clear the kerberos cache in DDC by running the command "klist -li 0x3e4 purge" in command prompt
-TEST2,FAILURE,SCHCEK
+Exact PATTERN-MATCHED in logs,ISSUE DESCRIPTION,SOLUTION,Case Ref #
+Mechanism level: Checksum failed,REGISTRATION FAILURE DUE TO INCONSISTENT KERB TICKET CACHE,Clear the kerberos cache in DDC by running the command "klist -li 0x3e4 purge" in command prompt,74891452
+Error: Unable to obtain password from user,Expired password for Centrify User,Run the command --> adkeytab -C -m,75096820

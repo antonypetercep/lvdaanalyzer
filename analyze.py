@@ -111,7 +111,7 @@ WAITING FOR YOUR INPUT FOR FURTHER PROCESSING OF LOGS \n"))
 
 if user_input == 1:
     print( "*************************************Performing Analysis of Registration Issue**************************************************************")
-    print("{:<7} | {:^31} | {:^60} | {:^30}".format('ISSUE COUNT', 'PATTERN MATCHED', 'ISSUE DESC', 'SOLUTION'))
+    print("{:<7} | {:^31} | {:^60} | {:^30} | {:^30}".format('ISSUE COUNT', 'PATTERN MATCHED', 'ISSUE DESC', 'SOLUTION','CASE #'))
     reg = Register(os.getcwd())
     reg.read_log()
     reg.search_issue(script_dir)
