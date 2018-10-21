@@ -2,3 +2,4 @@ Exact PATTERN-MATCHED in logs,ISSUE DESCRIPTION,SOLUTION,Case Ref #
 Mechanism level: Checksum failed,REGISTRATION FAILURE DUE TO INCONSISTENT KERB TICKET CACHE,Clear the kerberos cache in DDC by running the command "klist -li 0x3e4 purge" in command prompt,74891452
 Error: Unable to obtain password from user,Expired password for Centrify User,Run the command --> adkeytab -C -m,75096820
 DomainRealmMap.GetRealmForFqdn: Unable to determine realm from configuration,Incorrect realm mapping in kerberos configuration, Check the kerberos configuration (as per domain join method) file for incorrect mapping under "domain_realm". Also make sure dns_lookup_realm=true is set.,75517556
+javax.xml.ws.soap.SOAPFaultException: Cannot encrypt data,Java library dependency issue,Make sure the java version installed is supported and as per docs. Refer https://support.citrix.com/article/CTX233550 for more details.,75866772
